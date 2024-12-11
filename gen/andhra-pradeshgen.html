@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditional Fashion</title>
+    <link rel="stylesheet" href="a-pgen.css">
+</head>
+
+<header id="home" class="hero">
+    <h1>Explore India's Rich Cultural Heritage</h1>
+    <p>Discover traditional outfits from every state in India!</p>
+</header>
+
+<body>
+
+    <div class="gender-selection">
+        <h2>Select Gender for Traditional Fashion</h2>
+        <div class="gender-buttons">
+            <button id="maleButton">Male</button>
+            <button id="femaleButton">Female</button>
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById('maleButton').addEventListener('click', function () {
+            
+            window.location.href = 'male/andhra-pradesh-male.html'; // 
+        });
+
+      
+        document.getElementById('femaleButton').addEventListener('click', function () {
+            
+            window.location.href = 'female/andhra-pradesh-female.html';  
+        });
+    </script>
+
+</body>
+
+</html>

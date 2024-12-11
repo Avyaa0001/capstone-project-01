@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: linear-gradient(145deg, #2c2c2c, #383838); 
+    color: #ffffff; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header.hero {
+    background: rgba(255, 255, 255, 0.05); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+header.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8),
+                 0 0 30px rgba(255, 255, 255, 0.6);
+    color: #e6e6e6;
+}
+
+header.hero p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #d3d3d3;
+    margin-top: 10px;
+}
+
+
+.gender-selection {
+    background: rgba(255, 255, 255, 0.1); 
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), inset 0 0 50px rgba(255, 255, 255, 0.1);
+    animation: glow 3s infinite ease-in-out; 
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+}
+
+.gender-selection h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+/* Buttons Styling */
+.gender-buttons button {
+    background: linear-gradient(145deg, #4b4b4b, #606060); /* Subtle grey gradient */
+    border: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.gender-buttons button:hover {
+    background: linear-gradient(145deg, #606060, #4b4b4b); 
+    transform: scale(1.05); 
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+
+@media (max-width: 768px) {
+    header.hero h1 {
+        font-size: 2rem;
+    }
+    header.hero p {
+        font-size: 1rem;
+    }
+    .gender-selection h2 {
+        font-size: 1.5rem;
+    }
+    .gender-buttons button {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
